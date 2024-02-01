@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+
+	<header>
+		<h1 id="title">Calculator</h1>
+		<p>A simple calculator to perform math equations</p>
+		</header>
+		<form class="calculator" id="calculator">
+				<div class="inputBox">
+					<input type="number"
+								 class="firstNum"
+								 id="firstNum"
+								 placeholder="1st number"
+								 required/>
+				</div>
+				<div class="dropdown">
+					<select id="operator" name="" required>
+						<option value="">--Choose an operation--</option>
+						<option value="add">Add (+)</option>
+						<option value="subtract">Subtract (-)</option>
+						<option value="multiply">Multiply (*)</option>
+						<option value="divide">Divide (/)</option>
+					</select>
+				</div>
+				<div class="inputBox">
+					<input type="number"
+								 class="secondNum"
+								 id="secondNum"
+								 placeholder="2nd number"
+								 required/>
+			</div>
+				<div>
+					<button type="submit">Calculate</button>
+					<button type="reset">Reset</button><br>
+				</div>
+					<div class="answerElement">
+					<input type="text"
+								 id="answer"
+								 placeholder="Answer"
+								 disabled></input>
+			</div>
+			</form>
+	</div>
+    <<script src="index.js"></script>
+</body>

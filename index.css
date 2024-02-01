@@ -1,0 +1,82 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	padding: 4rem 0;
+	width: 90%;
+	max-width: 60rem;
+	min-height: 100vh;
+	background: lightgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper {
+	width: 500px;
+	padding: 1.5rem;
+	border-radius: 10px;
+	background: white;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	flex-flow: column nowrap;
+	}
+header p {
+	margin-top: 5px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: .5rem;
+	width: 50%;
+}
+input  {
+	padding: 10px;
+	border-radius: 10px;
+	margin: 10px 0;
+	width: 100%;
+}
+input[type=text] {
+	padding: 10px;
+	margin: 10px 0;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+}
+select {
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+}
+button {
+	/* remove default behavior */
+	appearance: none;
+	-webkit-appearance: none;
+	/*custom styling*/
+	padding: 10px;
+	border: none;
+	font-weight: 500;
+	border-radius: 5px;
+	margin: 5px 0;
+	justify-content: center;
+	}
+button[type="submit"]{
+	background-color: #3F51B5;
+	color: #fff;
+	transition: background-color 200ms ease-in;
+}
+button[type="reset"]{
+	background-color: gray;
+	color: #fff;
+	transition: background-color 200ms ease-in;
+}
+button[type="submit"]:hover{
+	background-color: green;
+}
+button[type="reset"]:hover{
+	background-color: red;
+}
